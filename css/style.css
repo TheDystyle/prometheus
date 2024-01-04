@@ -1,89 +1,19 @@
-/* Task 2*/
-/*input{
-  border: 1px solid blue;
-}*/
-/* div{
-  width: 100px;
-  height: 45px;
-  font-size: 35px;
-} */
-/* #d1{
-  background: yellow;
-}
-#d2{
-  background: lightblue;
-} */
-/* .yellowback{
-  background: yellow;
-}
-.blueback{
-  background: lightblue;
-} */
-/* Task 2*/
-
-
-/* Task 3*/
-/* прибрати відступи елементів списку */
-ul {
-  padding-left: 0;
-}
-
-/* прибрати традиційний маркер на початку списку */
-/* Крок 3 нижче тут */
-li {
-  list-style-type: none;
-  background-color: #eee;
-  border: 1px solid #c3c3c3;
-  padding: 10px 0px 10px 5px;
+a {
   font-size: 20px;
+  text-transform: uppercase;
+  color:mediumseagreen;
+  text-decoration: none;
 }
-
-/* Крок 5 нижче тут */
-.done {
-  background: green;
+a:hover{
+  color:seagreen;
+  font-weight: bold;
 }
-.remove {
-  background: red;
+h3{
+  text-transform: uppercase;
+  color:rgb(157, 105, 37);
+  font-weight: bold;
 }
-.important{
-  background: lightblue;
-}
-.important_checked{
- 
-}
-
-/* позначити завдання як виконане */
-/* Крок 6 нижче тут */
-li.finished {
-  color: white;
-  background: grey;
-  text-decoration: line-through;
-}
-
-input[type="text"] {
-  font-size: 18px;
-  width: 50%;
-  padding: 10px;
-}
-
-input[type="button"] {
-  font-size: 1.2em;
-  margin: -6px 4px 0px 0px;
-}
-
-#addButton {
-  padding: 10px;
-}
-
-/* Крок 10 нижче тут */
-.aboutcolor {
-  background: yellow;
-}
-
-/* Крок 12 нижче тут */
-#divabout {
-  margin: 10px;
+li{
   font-size: 20px;
-  width: 300px;
+  color:green;
 }
-/* Task 3*/
