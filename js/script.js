@@ -14,6 +14,8 @@
 // }
 // Task 2
 
+
+// Task 3
 function addTask() {
   var input = document.getElementById("input");
   // отримати поточний текст з поля введення
@@ -24,8 +26,9 @@ function addTask() {
     var item = document.createElement("li");
     // додати HTML для кнопок і тексту нового завдання
     // Зверніть увагу, що потрібно використовувати одинарні лапки '' замість подвійних "" в HTML
-item.innerHTML = '<input type="button" class="done" onclick="markDone(this.parentNode)" value="✓" /> ' +
-                 '<input type="button" class="remove" onclick="remove(this.parentNode)" value="✕" /> ' +
+item.innerHTML = '<input type="button" class="done" onclick="markDone(this.parentNode)" value="&#x2713;" /> ' +
+                 '<input type="button" class="remove" onclick="remove(this.parentNode)" value="&#x2715;" /> ' +
+                 '<input type="button" class="important" onclick="important(this.parentNode)" value="&#33;" /> ' +
                  newTask;
 
     // додати новий елемент до наявного списку
@@ -56,8 +59,20 @@ function remove(item) {
 
 /* Крок 11 нижче тут */
 function doAbout() {
+  var divebout = document.getElementById("divabout");
+  divebout.innerText = 'Author Zimas';
+  // console.log(divebout.innerText);
 }
 
 /* Крок 14 нижче тут */
 function clearAbout() {
+  var divebout = document.getElementById("divabout");
+  divebout.innerText = '';
+  // console.log(divebout.innerText);
 }
+
+function important(item) {
+  item.className = 'important';
+}
+
+// Task 3

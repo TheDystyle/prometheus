@@ -22,7 +22,7 @@
 /* Task 2*/
 
 
-
+/* Task 3*/
 /* прибрати відступи елементів списку */
 ul {
   padding-left: 0;
@@ -44,6 +44,12 @@ li {
 }
 .remove {
   background: red;
+}
+.important{
+  background: lightblue;
+}
+.important_checked{
+ 
 }
 
 /* позначити завдання як виконане */
@@ -71,8 +77,13 @@ input[type="button"] {
 
 /* Крок 10 нижче тут */
 .aboutcolor {
+  background: yellow;
 }
 
 /* Крок 12 нижче тут */
 #divabout {
+  margin: 10px;
+  font-size: 20px;
+  width: 300px;
 }
+/* Task 3*/
