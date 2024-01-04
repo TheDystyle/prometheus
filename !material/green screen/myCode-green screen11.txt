@@ -1,0 +1,29 @@
+/*var img = new SimpleImage(200, 200);
+
+for (var pixel of img.values()) {
+pixel.setRed(255);
+pixel.setGreen(0);
+pixel.setBlue(0);
+if (pixel.getRed() > 250) {
+pixel.setGreen(255);
+pixel.setRed(0);
+}
+}
+
+print(img);*/
+
+var image = new SimpleImage("duke_blue_devil.png");
+for (var pixel of image.values()) {  
+  if(pixel.getRed() < 200){
+        pixel.setRed(0);      
+        pixel.setGreen(255);
+        pixel.setBlue(100);
+
+  }
+ /* else {
+        pixel.setRed(255);
+        pixel.setGreen(255);
+        pixel.setBlue(255);
+  }*/
+}
+print(image);

@@ -1,0 +1,96 @@
+function sumPixel(nameOfImage, xpos, ypos) {
+var theImage = new SimpleImage(nameOfImage) ;
+var redNumber = theImage.getRed(xpos,ypos);
+var blueNumber = theImage.getBlue(xpos,ypos);
+var greenNumber = theImage.getGreen(xpos,ypos);
+return redNumber + blueNumber + greenNumber;
+}
+
+
+var sumPic = sumPixel("drewgreen.png", 250, 500);
+print(sumPic);
+
+/*function printPixel(nameImage, xpos, ypos) {
+var someImage = new SimpleImage(nameImage) ;
+print("red is " + someImage.getRed(xpos,ypos));
+print("green is " + someImage.getGreen(xpos,ypos));
+print("blue is " + someImage.getBlue(xpos,ypos));
+}
+
+printPixel("drewgreen.png", 10, 10);*/
+
+/*function perimeter(imageName) {
+var someImg = new SimpleImage(imageName);
+var value = 2 * someImg.getHeight() + 2 * someImg.getWidth();
+return value;
+}
+
+var perim = perimeter("rodger.png");
+print(perim);*/
+
+
+
+
+/*
+
+function reformatName(first, last) {
+var name = last + ", " ;
+name = first + name ;
+return name;
+}
+
+var name = reformatName("Susan", "Rodger");
+print(name);
+
+
+var part = "first" + ", ";
+print(part);
+
+
+
+
+
+
+
+function phrase3words(value1, value2, value3) {
+var answer =  value1 + " " + value2 + " " + value3;
+return answer;
+}
+var answer = phrase3words("smile","at","everyone");
+print(answer);
+
+
+var x = 3;
+var y= 2;
+y =x;
+
+
+print(x);
+print(y);
+var image = new SimpleImage("chapel.png");
+var pix = image.getPixel(1,1);
+var getCol = image.getGreen(1,1);
+print(pix);
+print(getCol);
+
+function square(x){
+    var ans = x*x;
+    return ans;
+}
+print(square(4));
+
+function sum(x,y,z){
+    var sum = x+y+z;
+    return sum;
+}
+function size(image){
+    print(image.getWidth());
+    print(image.getHeight());
+}
+
+print(sum(x,y,3));
+print();
+size(image);
+
+
+*/

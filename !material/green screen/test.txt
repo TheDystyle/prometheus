@@ -1,0 +1,143 @@
+//1 print RED chanel to max value
+/*var img = new SimpleImage("chapel.png");
+ 
+for (var pixel of img.values()) {
+pixel.setRed(255);
+}
+print(img);*/
+
+
+//2  delete RED color in RED chanel
+/*var img = new SimpleImage("chapel.png");
+ 
+for (var pixel of img.values()) {
+pixel.setRed(0);
+}
+print(img);*/
+
+//3  if  RED chanel > 70 setRed = 70
+/*var img = new SimpleImage("eastereggs.jpg");
+ 
+for (var pixel of img.values()) {
+if (pixel.getRed() > 70) {
+pixel.setRed(70);
+}
+}
+print(img);*/
+
+//4  black line in down
+/*var img = new SimpleImage("astrachan.jpg");
+ 
+var height = img.getHeight();
+for (var pixel of img.values()) {
+if (pixel.getY() >= height - 10) {
+pixel.setRed(0);
+pixel.setGreen(0);
+pixel.setBlue(0);
+}
+}
+print(img);*/
+
+// 5 green square in up left conner
+/*var img = new SimpleImage("chapel.png");
+for (var pixel of img.values()) {
+if (pixel.getX() < 50) {
+if (pixel.getY() < 50) {
+pixel.setRed(0);
+pixel.setGreen(255);
+pixel.setBlue(0);
+}
+}
+}
+print(img);*/
+
+// 6 yellow square in up right conner
+/*function topRightCorner(cornerWidth, cornerHeight, someImage, red, green, blue) {
+var width = someImage.getWidth();
+for (var pixel of someImage.values()) {
+if (pixel.getY() < cornerHeight) {
+if (pixel.getX() > width - cornerWidth) {
+pixel.setRed(red);
+pixel.setGreen(green);
+pixel.setBlue(blue);
+}
+}
+}
+return someImage;
+}
+var picture = new SimpleImage("chapel.png");
+var result = topRightCorner(30, 60, picture, 255, 255, 0);
+print(result);*/
+
+// 7 3 square in up right conner
+/*function topRightCorner(cornerWidth, cornerHeight, someImage, red, green, blue) {
+var width = someImage.getWidth();
+for (var pixel of someImage.values()) {
+if (pixel.getY() < cornerHeight) {
+if (pixel.getX() > width - cornerWidth) {
+pixel.setRed(red);
+pixel.setGreen(green);
+pixel.setBlue(blue);
+}
+}
+}
+return someImage;
+}
+
+var picture = new SimpleImage("chapel.png");
+var result = topRightCorner(30, 60, picture, 255, 255, 0);
+var result2 = topRightCorner(60, 30, result, 0, 0, 255);
+var result3 = topRightCorner(30, 30, result2, 0, 255, 0);
+print(result3);*/
+
+// 8 gradient
+/*function changeRed(width, height) {
+var picture = new SimpleImage(width, height);
+var red = 0;
+
+
+
+for (var pixel of picture.values()) {
+pixel.setRed(red);
+pixel.setGreen(0);
+pixel.setBlue(0);
+if (pixel.getRed() < 255) {
+red = red + 1;
+}
+if (pixel.getRed() == 255) {
+red = 0;
+}
+}
+
+
+return picture;
+}
+var result = changeRed(256,200);
+print(result);*/
+
+
+// 9 
+/*function changeRed(width, height) {
+var picture = new SimpleImage(width, height);
+var red = 0;
+
+
+
+for (var pixel of picture.values()) {
+pixel.setRed(red);
+pixel.setGreen(100);
+pixel.setBlue(200);
+if (pixel.getRed() == 255) {
+red = 0;
+}
+if (pixel.getRed() < 255) {
+red = red + 1;
+}
+}
+
+
+
+return picture;
+}
+var result = changeRed(256,200);
+print(result);*/

@@ -1,0 +1,78 @@
+/* Task 2*/
+/*input{
+  border: 1px solid blue;
+}*/
+/* div{
+  width: 100px;
+  height: 45px;
+  font-size: 35px;
+} */
+/* #d1{
+  background: yellow;
+}
+#d2{
+  background: lightblue;
+} */
+/* .yellowback{
+  background: yellow;
+}
+.blueback{
+  background: lightblue;
+} */
+/* Task 2*/
+
+
+
+/* прибрати відступи елементів списку */
+ul {
+  padding-left: 0;
+}
+
+/* прибрати традиційний маркер на початку списку */
+/* Крок 3 нижче тут */
+li {
+  list-style-type: none;
+  background-color: #eee;
+  border: 1px solid #c3c3c3;
+  padding: 10px 0px 10px 5px;
+  font-size: 20px;
+}
+
+/* Крок 5 нижче тут */
+.done {
+  background: green;
+}
+.remove {
+  background: red;
+}
+
+/* позначити завдання як виконане */
+/* Крок 6 нижче тут */
+li.finished {
+  color: white;
+  background: grey;
+  text-decoration: line-through;
+}
+
+input[type="text"] {
+  font-size: 18px;
+  width: 50%;
+  padding: 10px;
+}
+
+input[type="button"] {
+  font-size: 1.2em;
+  margin: -6px 4px 0px 0px;
+}
+
+#addButton {
+  padding: 10px;
+}
+
+/* Крок 10 нижче тут */
+.aboutcolor {
+}
+
+/* Крок 12 нижче тут */
+#divabout {
+}

@@ -1,0 +1,142 @@
+function pixelOnEdge(image,pixel,horizontalThick, verticalThick){
+var x = pixel.getX();
+var y = pixel.getY();
+if (x < verticalThick || x > image.getWidth() - verticalThick){
+return true;
+}
+if (y < horizontalThick || y > image.getHeight() - horizontalThick){
+return true;
+}
+return false;
+} function addBorders(image,horizontalThick, verticalThick){
+for (var px of image.values()){
+if (pixelOnEdge(image,px,horizontalThick,verticalThick)){
+px = setBlack(px);
+}
+}
+return image;
+} var img = new SimpleImage("skyline.jpg");
+img = addBorders(img,40,20);
+print(img);
+
+
+/*function moreRedThanGreen(namefile) {
+var someImg = new SimpleImage(namefile);
+
+
+var count = 0;
+for (var pix of someImg.values()) {
+if (pix.getRed() > pix.getGreen()) {
+count = count + 1;
+}
+}
+
+return count;
+}
+
+print(moreRedThanGreen("usain.jpg"));
+
+*/
+/*
+var x = 30;
+var y = 8;
+
+if (x > 10) {
+print("one");
+if (y < 10) {
+print("two");
+}
+}
+if (x < 20) {
+print("three");
+if (y > 5) {
+print("four");
+}
+}
+*/
+
+
+
+
+/* work variant
+var img = new SimpleImage(200,200);
+for (var px of img.values()){
+var x = px.getX();
+var y = px.getY();
+if (x < img.getWidth()/2){
+px.setRed(255);
+}
+if (y>img.getHeight()/2){
+px.setBlue(255);
+}
+else {
+px.setGreen(255);
+}
+if (x < img.getWidth()/2 && x < img.getHeight()/2){
+px.setGreen(0);
+}
+}
+print (img);*/
+
+
+
+
+
+/*var img = new SimpleImage(200, 200);
+for (var px of img.values()) {
+  var x = px.getX();
+  var y = px.getY();
+  if (x < img.getWidth() / 2) {
+    px.setRed(255);
+  }
+  if (y > img.getHeight() / 2) {
+    px.setBlue(255);
+  } else {
+    px.setGreen(255);
+  }
+}
+print(img);*/
+
+
+
+
+
+/*var img = new SimpleImage(200, 200);
+
+for (var pixel of img.values()) {
+pixel.setRed(255);
+pixel.setGreen(0);
+pixel.setBlue(0);
+if (pixel.getRed() > 250) {
+pixel.setGreen(255);
+pixel.setRed(0);
+}
+}
+
+print(img);
+*/
+/*
+var image = new SimpleImage("duke_blue_devil.png");
+for (var pixel of image.values()) {  
+  if(pixel.getRed() < 200){
+        pixel.setRed(0);      
+        pixel.setGreen(255);
+        pixel.setBlue(100);
+
+  }
+}
+print(image);*/
+
+
+/*
+var image = new SimpleImage("duke_blue_devil.png");
+w = image.getWidth();
+for (var pixel of image.values()) {
+x = pixel.getX();
+y = pixel.getY();
+if (x > y) {
+pixel.setRed(0);
+pixel.setBlue(0);
+}
+}
+print(image);*/
