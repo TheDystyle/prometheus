@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./css/csshtml_1_task3.css">
+</head>
+<body>
+  <h3><a href="index.html">main page</a></h3>
+
+<!--  Task3 START = TO DO List -->
+<h1 id="myHeader">TO DO List</h1>
+  <!-- Крок 1 і крок 2 нижче тут -->
+  <input type="button" value="ADD" id="addButton" onclick="addTask()"><br>
+  <input type="text" id="input" placeholder="enter task …">
+  <hr>
+  <ul id="tasks">
+    <li>
+      <input type="button" class="done" onclick="markDone(this.parentNode)" value="&#x2713;" />
+      <input type="button" class="remove" onclick="remove(this.parentNode)" value="&#x2715;" />
+      <input type="button" class="important" onclick="important(this.parentNode)" value="!" />
+      make todo list
+    </li>
+  </ul>
+  <hr>
+  <!-- - Крок 8 і крок 9 нижче тут -->
+  <div id="divabout" class="aboutcolor"></div>
+  <input type="button" value="About" onclick="doAbout()">
+
+  <!-- Крок 13 нижче тут -->
+  <input type="button" value="Clear" onclick="clearAbout()">
+
+<!--  Task3 END = TO DO List -->
+<script src="./js/csshtml_1_task3.js"></script>
+</body>
+</html>

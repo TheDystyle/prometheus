@@ -1,0 +1,27 @@
+a {
+  font-size: 20px;
+  text-transform: uppercase;
+  color:mediumseagreen;
+  text-decoration: none;
+}
+a:hover{
+  color:seagreen;
+  font-weight: bold;
+}
+
+/* Task 2*/
+input{
+  border: 1px solid blue;
+}
+div{
+  width: 100px;
+  height: 45px;
+  font-size: 35px;
+}
+.yellowback{
+  background: yellow;
+}
+.blueback{
+  background: lightblue;
+}
+/* Task 2*/

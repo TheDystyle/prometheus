@@ -1,0 +1,18 @@
+/* menu decoration START */
+a {
+  font-size: 20px;
+  text-transform: uppercase;
+  color:mediumseagreen;
+  text-decoration: none;
+}
+a:hover{
+  color:seagreen;
+  font-weight: bold;
+}
+/* menu decoration END */
+canvas{
+  width: 200px;
+  height: 100px;
+  font-size: 30px;
+  border: 1px solid grey;
+}
