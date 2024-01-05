@@ -1,0 +1,16 @@
+/* menu decoration START */
+a {
+  font-size: 20px;
+  text-transform: uppercase;
+  color:mediumseagreen;
+  text-decoration: none;
+}
+a:hover{
+  color:seagreen;
+  font-weight: bold;
+}
+/* menu decoration END */
+#d1{
+  width: 300px;
+  height: 250px;
+}
