@@ -10,16 +10,27 @@
   <h3><a href="index.html">main page</a></h3>
   
   <h1>Pain You Own Pictures</h1>
+  <!--
+    information:
+    https://learn.javascript.ru/drag-and-drop-objects
+   -->
   <p>
-    <span>Set Width </span><input type="text" id="widht1" onchange="setWidth(this.value)">
+    <span>Set Width </span><input type="text" id="widht1" value="400" onchange="setWidth(this.value)">
     <span>Set Height </span><input type="text" id="height1" value="400" onchange="setHeight(this.value)">
   </p>
-  <canvas id="canvas1"></canvas>
+  <canvas id="canvas1" onmousedown="startPaint()" onmousemove="doPaint(event.offsetX,event.offsetY)" onmouseup="endPaint()"></canvas>
+  <!--  
+  onmousedown="startPaint()" фиксация клика ЛКМ
+  onmousemove="doPaint(event.offsetX,event.offsetY)" фиксирует пердвижение мышки
+  onmouseup="endPaint() 
+  -->
+
   <p>
-    <span>Brush Color: </span><input type="color" value="#001A57" id="clr" onclick="docolor()">
-    <span>Brush Size: </span><input type="range" min="10" max="100" value="10" list="values" id="sldr" oninput="doSquare()">
+    <span>Brush Color: </span><input type="color" value="#2fbc60" id="brushColor" onchange="setColor(this.value)">
+    <span>Brush Size: </span><input type="range" min="4" max="50" value="5" value="50" oninput="resizeBrush(this.value)">
+    <output id="sizeOutput">50</output>
   </p>
-  <input type="button" value="Clear Canvas" id="" onclick="clearCanvas()">
+  <input type="button" value="Clear Canvas" onclick="clearCanvas()">
 
   
   
