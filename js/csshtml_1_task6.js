@@ -4,8 +4,26 @@ var color = 'black';
 var radius = 50;
 // малюватиме, лише якщо натискати на мишку (спрацьовує лише з натиснутою кнопкою)
 var isPainting = false;
+// console.log(context);
+console.log(paintcanvas);
 
-function setWidth(value) {
+function setWidth(value) { // Отслеживаем ввод данных в поле (можно заменить на нажатие кнопки)
+    var ifNum = isNumeric(value);
+    // console.log(width);
+    if(ifNum == true){
+        // var canvas = document.getElementById("canvas1"); 
+        var w = document.getElementById('widht1').value; // Получаем введённое значение
+        paintcanvas.setAttribute('width',w); // Меняем ширину canvas элемента
+    }
+}
+function setHeight(value) { // Отслеживаем ввод данных в поле (можно заменить на нажатие кнопки)
+    var ifNum = isNumeric(value);
+    // console.log(width);
+    if(ifNum == true){
+        // var canvas = document.getElementById("canvas1"); 
+        var h = document.getElementById('height1').value; // Получаем введённое значение
+        paintcanvas.setAttribute('height', h); // Меняем ширину canvas элемента
+    }
 }
 
 function clearCanvas() {
