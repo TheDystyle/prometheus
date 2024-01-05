@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./css/csshtml_1_task6.css">
+</head>
+<body>
+  <h3><a href="index.html">main page</a></h3>
+  
+  <h1>Pain You Own Pictures</h1>
+  <p>
+    <span>Set Width </span><input type="text" value="400" id="">
+    <span>Set Height </span><input type="text" value="400" id="">
+  </p>
+  <canvas id="canvas1"></canvas>
+  <p>
+    <span>Brush Color: </span><input type="color" value="#001A57" id="clr" onclick="docolor()">
+    <span>Brush Size: </span><input type="range" min="10" max="100" value="10" list="values" id="sldr" oninput="doSquare()">
+  </p>
+  <input type="button" value="Clear Canvas" id="" onclick="clearCanvas()">
+
+  
+  
+<script src="./js/csshtml_1_task6.js"></script>
+</body>
+</html>

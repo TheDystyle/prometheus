@@ -1,15 +1,16 @@
-function docolor(){
-  var dd1 = document.getElementById("d1");
+function doColor() {
+  var canvas = document.getElementById("can");
   var colorinput = document.getElementById("clr");
-  var color = colorinput.value;
-  dd1.style.backgroundColor = color;
+  canvas.style.backgroundColor = colorinput.value;
 }
 function doSquare(){
-  var dd1 = document.getElementById("d1");
-  var sizeinput = document.getElementById("sldr");
-  var size = sizeinput.value;
-  var ctx = dd1.getContext("2sd");
-  ctx.clearRect(0,0,dd1.clientWidth,dd1.height);
-  ctx.fillStyle = "yellow";
-  ctx.fillRect(10,10,40,40);
+  var sliderinput = document.getElementById("slr");
+  var len = sliderinput.value;
+  var canvas = document.getElementById("can");
+  var context = canvas.getContext("2d");
+  context.clearRect(0,0,canvas.width,canvas.height);
+  context.fillStyle = "yellow";
+  context.fillRect(10,10,len,len);
+  context.fillRect(parseInt(len)+20,10,len,len);
+  // context.fillRect(len*3,10,len,len);
 }
