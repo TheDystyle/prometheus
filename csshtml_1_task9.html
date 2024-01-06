@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./css/csshtml_1_task9.css">
+</head>
+<body>
+  <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+  <!-- скрипт есть в папке !materials/libraries -->
+  <h3><a href="index.html">main page</a></h3>
+  <h1>Chromokey</h1>
+  <canvas id="fgcan"></canvas>
+  <canvas id="bgcan"></canvas> <br>
+
+  <p>
+    Foreground (Передний план) <input type="file" accept="image/*" id="fgfile" onchange="loadForegroundImage()"><br><br>
+    Background (Задний план)   <input type="file" accept="image/*" id="bgfile" onchange="loadBackgroundImage()">
+  </p>
+  <!--
+    multiple="false": 1 file
+    multiple="true": many files  
+  -->
+  <p>
+    <input type="button" value="Merge" class="button" onclick="greenScreen()">
+    <input type="button" value="Clear" class="button" onclick="clearCanvas()">
+  </p>
+
+
+
+
+<script src="./js/csshtml_1_task9.js"></script>
+</body>
+</html>
