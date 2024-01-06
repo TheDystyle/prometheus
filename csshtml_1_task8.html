@@ -4,11 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="./css/csshtml_1_task7.css">
+  <link rel="stylesheet" type="text/css" href="./css/csshtml_1_task8.css">
 </head>
 <body>
+  <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+  <!-- скрипт есть в папке !materials/libraries -->
   <h3><a href="index.html">main page</a></h3>
-  
-<script src="./js/csshtml_1_task7.js"></script>
+  <h1>Download picture</h1>
+  <canvas id="can"></canvas> <canvas id="gray"></canvas> <br>
+  <!-- <input type="text" id="finput"> -->
+  <input type="file" multiple="false" accept="image/*" id="finput">
+  <!--
+    multiple="false": 1file
+    multiple="true": many files  
+  -->
+  <input type="button" value="Upload" onclick="upload()">
+  <input type="button" value="Make Gray" onclick="makeGray()">
+<script src="./js/csshtml_1_task8.js"></script>
 </body>
 </html>

@@ -10,3 +10,7 @@ a:hover{
   font-weight: bold;
 }
 /* menu decoration END */
+
+canvas{
+  border: 1px solid;
+}
